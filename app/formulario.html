@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  
+
+    <meta charset="utf-8">
+  
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Propuesta para curso de Psicología Sistémica – Universidad Luis Amigó, Manizales">
+<meta name="author" content="Breitner Arteaga Rubiano">
+
+    <title>Curso Psistefam</title>
+
+<!-- Open Graph / WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="✨ Propuesta Académica | Psicología Sistémica">
+<meta property="og:description" content="Propuesta académica del curso de Psicología Sistémica – Universidad Luis Amigó, Manizales. Formación innovadora, enfoque sistémico y liderazgo consciente en salud mental.">
+<meta property="og:image" content="https://TU_DOMINIO/assets/img/preview-whatsapp.png">
+<meta property="og:url" content="https://TU_DOMINIO/index.html">
+<meta property="og:site_name" content="Psicología Sistémica Luis Amigó">
+
+  
+    <!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+<link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<!-- LOGO CLICABLE -->
+<div id="login-button">
+    <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png" alt="Entrar">
+    <span class="pulse-text">👉 Pulsa aquí</span>
+</div>
+
+<!-- LOGIN -->
+<div id="container">
+    <h1>Ingresar</h1>
+    <span class="close-btn">✖</span>
+
+    <form>
+        <input type="email" placeholder="E-mail">
+        <input type="password" placeholder="Password">
+        <a href="#">Entrar</a>
+
+        <div id="remember-container">
+            <input type="checkbox" class="checkbox" checked>
+            <span id="remember">Recuérdame</span>
+            <span id="forgotten">Olvidé mi contraseña</span>
+        </div>
+    </form>
+</div>
+
+<!-- RECUPERAR -->
+<div id="forgotten-container">
+    <h1>Nueva clave</h1>
+    <span class="close-btn">✖</span>
+    <form>
+        <input type="email" placeholder="E-mail">
+        <a href="#" class="orange-btn">Nueva contraseña</a>
+    </form>
+</div>
+
+<script>
+$('#login-button').click(function(){
+    $('#container').fadeIn();
+});
+
+$('.close-btn').click(function(){
+    $('#container, #forgotten-container').fadeOut();
+});
+
+$('#forgotten').click(function(){
+    $('#container').fadeOut(function(){
+        $('#forgotten-container').fadeIn();
+    });
+});
+</script>
+
+</body>
+</html>
